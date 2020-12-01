@@ -1,0 +1,24 @@
+{
+  "name": "restfulapi",
+  "version": "1.0.0",
+  "description": "restful api (node, express, mongoDB)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtumel123/restfulapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtumel123/restfulapi/issues"
+  },
+  "homepage": "https://github.com/rtumel123/restfulapi#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
