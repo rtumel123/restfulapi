@@ -1,18 +1,16 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
+require('dotenv/config');
 
-// ROUTES
-app.get('/', (req, res) => {
-  res.send('On Home');
-});
+// import routes
+const postsRoute = require('./routes/posts');
 
-app.get('/posts', (req, res) => {
-  res.send('On posts');
-});
+app.use('/posts', postsRoute);
 
 // CONNECT TO DB
-mongoose.connect('mongodb+srv://test:r123@rest.gyput.mongodb.net/REST?retryWrites=true&w=majority',
+mongoose.connect(
+  process.env.DB_CONNECTION,
  { useNewUrlParser: true }, 
  () => console.log('connected to db')
 );
